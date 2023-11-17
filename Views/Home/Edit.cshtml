@@ -1,0 +1,63 @@
+﻿@model Hotel
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<div class=" container" dir="rtl">
+    <div class=" alert alert-secondary">تعديل بيانات الفندق </div>
+    <form asp-controller="Home" asp-action="Update" method="post">
+        <input type="hidden" asp-for="@Model.Id" />
+
+        <div class=" row">
+            <div class=" col-sm-6 ">
+                <label for="Name">اسم الفندق </label>
+                <input type="text" id="Name" name="Name" class=" form-control form-control-sm" asp-for="@Model.Address" />
+
+            </div>
+        </div>
+
+
+        <div class=" row">
+            <div class=" col-sm-6 ">
+                <label for="Address">عنوان الفندق </label>
+                <input type="text" id="Address" name="Address" class=" form-control form-control-sm" asp-for="@Model.Address" />
+
+                <div class=" col-sm-6 ">
+                    <label for="City">اسم المدينة </label>
+                    <input type="text" id="City" name="City" class=" form-control form-control-sm" asp-for="@Model.City" />
+
+                </div>
+            </div>
+
+            <div class=" row">
+                <div class=" col-sm-6 ">
+                    <label for="Emile"> البريد الالكتروني</label>
+                    <input type="text" id="Emile" name="Emile" class=" form-control form-control-sm" asp-for="@Model.Emile" />
+
+                </div>
+                <div class=" col-sm-6 ">
+                    <label for="Phone"> رقم الجوال </label>
+                    <input type="text" id="Phone" name="Phone" class=" form-control form-control-sm" asp-for="@Model.Phone" />
+
+                </div>
+            </div>
+
+            <div class=" row">
+                <div class=" col-sm ">
+                    <label for="Images">  الصورة</label>
+                    <input type="text" id="Images" name="Images" class=" form-control form-control-sm" asp-for="@Model.Images"/>
+
+                </div>
+            </div>
+
+            <div class=" row ">
+                <div class="col text-center">
+                    <label for="Images">
+                        <button class=" btn btn-success" type="submit">حفظ</button>
+                    </label>
+                </div>
+            </div>
+
+    </form>
+</div>
