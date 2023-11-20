@@ -1,4 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations;
 
 namespace MyHotels.Models
 {
@@ -21,10 +21,8 @@ namespace MyHotels.Models
         [StringLength(50)]
         public string Fettures { get; set; }
         [Required]
-        [StringLength(50)]
         public int IdRoom { get; set; }
         [Required]
-		[StringLength(50)]
 		public int IdHotel { get; set; }
 
     }
